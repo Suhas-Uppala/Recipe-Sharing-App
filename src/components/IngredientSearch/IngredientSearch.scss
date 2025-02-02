@@ -1,0 +1,68 @@
+.ingredient-search {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+
+  .ingredient-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 15px;
+      background-color: #ff9505;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+
+    .ingredient-tag {
+      background-color: #ff9505;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      button {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .search-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9505;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+  }
+}
